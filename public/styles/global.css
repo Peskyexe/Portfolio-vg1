@@ -1,42 +1,13 @@
-:root {
-    /* hsl (fallback color) */
-    --bg-dark: hsl(122 59% 1%);
-    --bg: hsl(121 37% 4%);
-    --bg-light: hsl(121 20% 8%);
-    --text: hsl(119 68% 93%);
-    --text-muted: hsl(120 14% 68%);
-    --highlight: hsl(120 11% 37%);
-    --border: hsl(121 14% 27%);
-    --border-muted: hsl(121 22% 16%);
-    --primary: hsl(121 32% 65%);
-    --secondary: hsl(297 40% 72%);
-    --danger: hsl(9 26% 64%);
-    --warning: hsl(52 19% 57%);
-    --success: hsl(146 17% 59%);
-    --info: hsl(217 28% 65%);
-    /* oklch */
-    --bg-dark: oklch(0.1 0.02 145);
-    --bg: oklch(0.15 0.02 145);
-    --bg-light: oklch(0.2 0.02 145);
-    --text: oklch(0.96 0.04 145);
-    --text-muted: oklch(0.76 0.04 145);
-    --highlight: oklch(0.5 0.04 145);
-    --border: oklch(0.4 0.04 145);
-    --border-muted: oklch(0.3 0.04 145);
-    --primary: oklch(0.76 0.1 145);
-    --secondary: oklch(0.76 0.1 325);
-    --danger: oklch(0.7 0.05 30);
-    --warning: oklch(0.7 0.05 100);
-    --success: oklch(0.7 0.05 160);
-    --info: oklch(0.7 0.05 260);
-}
+/* Importer Poppins og Manrope fontene fra Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-body.light {
-    /* hsl (fallback color) */
+:root {
+    /* HSL fallback farger*/
     --bg-dark: hsl(119 21% 89%);
     --bg: hsl(119 39% 94%);
     --bg-light: hsl(119 100% 99%);
-    --text: hsl(123 81% 3%);
+    --text: hsl(123 75% 3%);
     --text-muted: hsl(121 14% 27%);
     --highlight: hsl(119 100% 98%);
     --border: hsl(120 9% 49%);
@@ -47,11 +18,12 @@ body.light {
     --warning: hsl(52 23% 34%);
     --success: hsl(147 19% 36%);
     --info: hsl(217 22% 41%);
-    /* oklch */
+
+    /* Farge variabler */
     --bg-dark: oklch(0.92 0.02 145);
     --bg: oklch(0.96 0.02 145);
     --bg-light: oklch(1 0.02 145);
-    --text: oklch(0.15 0.04 145);
+    --text: oklch(0.2 0.04 145);
     --text-muted: oklch(0.4 0.04 145);
     --highlight: oklch(1 0.04 145);
     --border: oklch(0.6 0.04 145);
@@ -62,10 +34,107 @@ body.light {
     --warning: oklch(0.5 0.05 100);
     --success: oklch(0.5 0.05 160);
     --info: oklch(0.5 0.05 260);
+
+    --shadow: 0px 2px 2px oklch(0 0 0 / 0.2), 0px 4px 4px oklch(0 0 0 / 0.1);
 }
 
+/* Default styling for alle elementer */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-muted);
 }
+
+/* Default styling for body */
+body {
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fikser bredden til alle sections */
+.content {
+    width: min(1440px, 85vw);
+    height: 100%;
+}
+
+/* Klasser jeg kan gi ut til å kjapt set en "grid-area" verdi */
+.grid-1 {
+    grid-area: box-1;
+}
+.grid-2 {
+    grid-area: box-2;
+} 
+.grid-3 {
+    grid-area: box-3;
+}
+.grid-4 {
+    grid-area: box-4;
+}
+.grid-5 {
+    grid-area: box-5;
+}
+.grid-6 {
+    grid-area: box-6;
+}
+
+
+/* Default styling for flere elementer, gjør det lettere å holde siden consistent */
+h1 {
+    text-align: center;
+    color: var(--text);
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text);
+    font-size: 2.25em;
+    font-weight: 800;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+h3 {
+    text-align: center;
+    color: var(--text);
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+h4 {
+    text-align: center;
+    color: var(--text);
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+h5 {
+    color: var(--text);
+    font-size: 1.75em;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    text-align: center;
+}
+

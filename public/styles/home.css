@@ -1,0 +1,45 @@
+
+
+.hero-section {
+    background-color: var(--bg-dark);
+    width: 100%;
+    padding-top: 3em;
+}
+
+.hero-section .content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 2em;
+}
+
+.hero-text-container {
+    width: 100%;
+    margin-top: 4em;
+}
+
+.hero-text-container * {
+    width: 100%;
+}
+
+.hero-image-container {
+    margin-top: 2em;
+}
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background-color: var(--border);
+}
+
+.bio-section {
+    background-color: var(--bg);
+    width: 100%;
+}
+
+.bio-section h3 {
+    margin-top: 1.5em;
+}
+
+.bio-section p {
+    margin-bottom: 4em;
+}
