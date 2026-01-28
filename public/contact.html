@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jørgen Sundbye | Kontakt meg</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- Stylesheets for global styling -->
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/nav_footer.css">
+    <!-- Stylesheet for kontakt siden -->
+    <link rel="stylesheet" href="styles/contact.css">
+    <!-- Stylesheet for font awesome ikoner -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Script for responsive navbar -->
     <script src="scripts/dynamic_navbar.js" defer></script>
 </head>
 <body>
+    <!-- Navbar seksjonen -->
     <nav class="section">
         <div class="content">
             <a class="nav-logo-container" href="index.html"><img src="assets/portfolio_logo_posetive.svg" alt=""></a>
+            <!-- Sidebar, brukes når skjermen ikke er stor nok for en vanlig navbar -->
             <div class="nav-links-sidebar">
-                <li class="menu-close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="white"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li class="menu-close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
                 <li><a class="nav-links" href="projects.html">Prosjekter</a></li>
                 <li><a class="nav-links" href="about.html">Om Meg</a></li>
                 <li><a class="nav-links-active" href="contact.html">Kontakt</a></li>
@@ -26,9 +32,11 @@
                 <a class="nav-links" href="about.html">Om Meg</a>
                 <a class="nav-links-active" href="contact.html">Kontakt</a>
             </div>
-            <i class="menu-open-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32" fill="white"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></i>
+            <!-- Knapp til å åpne sidebaren -->
+            <i class="menu-open-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></i>
         </div>
     </nav>
+    <!-- Hero seksjonen -->
     <div class="section hero-section">
         <div class="content">
             <div class="hero-left">
@@ -45,19 +53,20 @@
                         <a href="#" class="hero-icon"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#" class="hero-icon-text">Facebook</a>
                     </div>
-                    <div id="phone-container">
-                        <a href="#" class="hero-icon"><i class="fa-solid fa-phone"></i></a>
-                        <a href="#" class="hero-icon-text">+47 942 67 655</a>
+                    <div id="instagram-container">
+                        <a href="#" class="hero-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hero-icon-text">Instagram</a>
                     </div>
                 </div>
             </div>
             <div class="hero-right">
                 <div class="hero-image-container">
-                    <div class="hero-image"></div>
+                    <img src="assets/portrait_images/portrait_horizontal_lowres.png" class="hero-image"></img>
                 </div>
             </div>
         </div>
     </div>
+    <!-- E-post form seksjonen -->
     <div class="section email-section">
         <div class="content">
             <h5>Send meg en E-post</h5>
@@ -79,12 +88,12 @@
                 </div>
             </form>
         </div>
-
     </div>
+    <!-- Footer seksjonen -->
     <footer class="section">
         <div class="content">
+            <a class="footer-links" href="home.html">Hjemside</a>
             <div class="footer-links-container">
-                <a class="footer-links" href="home.html">Hjemside</a>
                 <a class="footer-links" href="./projects.html">Prosjekter</a>
                 <a class="footer-links" href="./about.html">Om Meg</a>
                 <a class="footer-links-active" href="./contact.html">Kontakt</a>

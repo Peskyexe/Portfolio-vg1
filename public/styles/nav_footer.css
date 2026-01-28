@@ -41,10 +41,10 @@ nav {
         transition: color 0.1s ease;
     }
 
+    /* Interaktive effekter for lenkene i navbaren */
     .nav-links:hover {
         color: var(--border);
     }
-
     .nav-links-active {
         color: var(--border);
         font-size: 1.25em;
@@ -54,6 +54,7 @@ nav {
         cursor: default;
     }
 
+    /* Styling for sidebaren */
     .nav-links-sidebar {
         list-style: none;
         position: fixed;
@@ -77,6 +78,7 @@ nav {
         width: 100%;
     }
 
+    /* Gjemmer knappen til å åpne sidebaren */
     .menu-open-button {
         display: none;
     }
@@ -89,7 +91,7 @@ footer {
 
     & > div {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         padding: 1.5em 0;
     }
@@ -106,10 +108,10 @@ footer {
         transition: color 0.1s ease;
     }
 
+    /* Interaktive effekter for lenkene i footeren */
     .footer-links:hover {
         color: var(--border-muted);
     }
-
     .footer-links-active {
         color: var(--border-muted);
         font-size: 1em;
@@ -119,23 +121,29 @@ footer {
     }
 }
 
-/* Media queries for å endre layout basert på skjerm størrelse */
+/* Bytter ut navbaren med en knapp til å åpne sidebaren når skjermen er mindre en 550px bred */
 @media(max-width: 550px) {
     nav .nav-links-container {
         display: none;
     }
-
     nav .menu-open-button {
         display: block;
     }
+
+    /* Gjør også logoen litt mindre */
+    nav .nav-logo-container {
+        height: 60px;
+    }
 }
 
+/* Fjerner footeren når skjermen er mindre en 450px bred */
 @media(max-width: 450px) {
     footer.section {
         display: none;
     }
 }
 
+/* Gjør sånn at sidebaren dekker hele skjermen når skjermen er mindre en 400px bred */
 @media(max-width: 400px) {
     nav .nav-links-sidebar {
         width: 100%;

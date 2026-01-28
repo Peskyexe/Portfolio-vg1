@@ -67,6 +67,11 @@ body {
     width: min(1440px, 85vw);
     height: 100%;
 }
+@media(max-width: 425px) {
+    .content {
+        width: 90vw;
+    }
+}
 
 /* Klasser jeg kan gi ut til å kjapt set en "grid-area" verdi */
 .grid-1 {

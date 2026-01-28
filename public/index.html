@@ -5,54 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jørgen Sundbye | Full-stack utvikler og UI/UX designer</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- Stylesheets for global styling -->
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/nav_footer.css">
+    <!-- Stylesheet for hjemsiden -->
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- Script for responsive navbar -->
     <script src="scripts/dynamic_navbar.js" defer></script>
 </head>
 <body>
+    <!-- Navbar seksjonen -->
     <nav class="section">
         <div class="content">
             <a class="nav-logo-container" href="index.html"><img src="assets/portfolio_logo_posetive.svg" alt=""></a>
+            <!-- Sidebar, brukes når skjermen ikke er stor nok for en vanlig navbar -->
             <div class="nav-links-sidebar">
-                <li class="menu-close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="white"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li class="menu-close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
                 <li><a class="nav-links" href="projects.html">Prosjekter</a></li>
                 <li><a class="nav-links" href="about.html">Om Meg</a></li>
-                <li><a class="nav-links-active" href="contact.html">Kontakt</a></li>
+                <li><a class="nav-links" href="contact.html">Kontakt</a></li>
             </div>
             <div class="nav-links-container">
                 <a class="nav-links" href="projects.html">Prosjekter</a>
                 <a class="nav-links" href="about.html">Om Meg</a>
                 <a class="nav-links" href="contact.html">Kontakt</a>
             </div>
-            <i class="menu-open-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32" fill="white"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></i>
+            <!-- Knapp til å åpne sidebaren -->
+            <i class="menu-open-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></i>
         </div>
     </nav>
+    <!-- Hero seksjonen -->
     <div class="section hero-section">
         <div class="content">
-            <div class="hero-text-container">
+            <div class="hero-text-container grid-1">
                 <h2>Designer</h2>
                 <p>UI og UX designer som lager moderne og responsive nettsider</p>
             </div>
-            <div class="hero-image-container">
-                <div class="hero-image"></div>
+            <div class="hero-image-container grid-3">
+                <img src="assets/portrait_images/portrait_vertical_lowres.png" class="hero-image"></img>
             </div>
-            <div class="hero-text-container">
+            <div class="hero-text-container grid-2">
                 <h2>Koder</h2>
                 <p>Full-stack utvikler som skriver ryddig og effektiv kode</p>
             </div>
         </div>
     </div>
+    <!-- Bio seksjonen -->
     <div class="section bio-section">
         <div class="content">
             <h3>Hei, jeg er Jørgen</h3>
             <p>Jeg er en elev ved Åssiden Vgs som går informasjons teknologi og media produksjon, og jeg ser for meg en framtid innen for IT-utvikling</p>
         </div>
     </div>
+    <!-- Footer seksjonen -->
     <footer class="section">
         <div class="content">
+            <a class="footer-links-active" href="home.html">Hjemside</a>
             <div class="footer-links-container">
-                <a class="footer-links-active" href="home.html">Hjemside</a>
                 <a class="footer-links" href="projects.html">Prosjekter</a>
                 <a class="footer-links" href="about.html">Om Meg</a>
                 <a class="footer-links" href="contact.html">Kontakt</a>

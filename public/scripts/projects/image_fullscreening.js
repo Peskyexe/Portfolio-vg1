@@ -1,7 +1,7 @@
 // Henter inn alle elementene 
-images = document.querySelectorAll(".project-image, .project-image-active");
-modal = document.getElementById("image-modal")
-modal_image = modal.querySelector("img")
+const images = document.querySelectorAll(".project-image, .project-image-active");
+const modal = document.querySelector(".image-modal-hidden")
+const modal_image = document.querySelector(".image-modal-image-hidden")
 
 // Variabel for å holde følge på om modalen er åpnet eller ikke
 var modal_active = false;
@@ -12,26 +12,21 @@ images.forEach(element => {
         modal_active = true;
         event.stopPropagation();
 
-        let clicked_image_src = element.src;
-
-        modal.style.display = "flex";
-        modal_image.src = clicked_image_src;
+        // Setter popup bildet sin src attribute til det samme som bilde som ble trykket på
+        modal_image.src = element.src;
         
-        // Magisk copilot løsning
-        // Force repaint so transform transition can work
-        modal.offsetHeight;
-
-        modal.style.backgroundColor = "#1c221c69";
-        modal.style.backdropFilter = "blur(8px)"
-        modal_image.style.transform = "scale(1)";
+        // Legger til aktiv klassene til containeren og selve bilde
+        modal.classList.add("image-modal-active");
+        modal_image.classList.add("image-modal-image-active");
     })
 });
 
 // Når du klikker mens modalen er åpen så vil modalen lukkes igjen
 window.addEventListener('click', (event) => {
     if (modal_active) {
-        modal_image.style.transform = "scale(0)";
-        modal.style.display = "none";
+        // Fjerner aktiv klassene fra containeren og bilde
+        modal.classList.remove("image-modal-active");
+        modal_image.classList.remove("image-modal-image-active");
 
         modal_active = false;
     }
