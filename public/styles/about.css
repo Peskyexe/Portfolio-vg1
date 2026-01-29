@@ -85,6 +85,7 @@
 }
 
 
+/* Media queries for å gjøre nettsiden mere responsive */
 /* Fjerner bilde ved toppen når skjermen er mindre en 1050px bred */
 @media (max-width: 1050px) {
     .hero-section .content {

@@ -47,6 +47,8 @@
     margin-bottom: 4em;
 }
 
+
+/* Media queries for å gjøre nettsiden mere responsive */
 /* Gjør hero layouten til mere vertikal når skjermen er mindre en 800px bred */
 @media (max-width: 800px) {
     .hero-section .content {

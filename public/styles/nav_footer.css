@@ -121,6 +121,8 @@ footer {
     }
 }
 
+
+/* Media queries for å gjøre nettsiden mere responsive */
 /* Bytter ut navbaren med en knapp til å åpne sidebaren når skjermen er mindre en 550px bred */
 @media(max-width: 550px) {
     nav .nav-links-container {

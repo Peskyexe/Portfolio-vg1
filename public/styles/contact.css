@@ -201,6 +201,7 @@
     opacity: 0.75;
 }
 
+/* Media queries for å gjøre nettsiden mere responsive */
 /* Fjerner bilde ved toppen når skjermen er mindre en 800px bred */
 @media (max-width: 1000px) {
     .hero-section .content {
