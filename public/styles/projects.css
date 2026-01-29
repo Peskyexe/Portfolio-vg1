@@ -47,22 +47,22 @@
 }
 
 .project-image {
-    display: none;
-}
-
-.project-image-active {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 25px;
     object-fit: cover;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    display: block;
     border: 4px solid var(--text-muted);
     cursor: pointer;
+    display: none;
+}
+/* Klasse for det aktive bilde */
+.project-image-active {
+    display: block;
 }
 
-.project-images-buttons {
+.project-images-buttons-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,15 +82,8 @@
 .project-images-buttons button:hover {
     background-color: var(--border);
 }
-
-.project-button-active {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--border-muted);
-    cursor: pointer;
-    transition: background-color 0.1s ease;
+/* Klasse for den aktive knappen */
+.project-button.project-button-active {
     background-color: var(--secondary);
 }
 
