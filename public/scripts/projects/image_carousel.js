@@ -9,7 +9,7 @@ function initializeCarousel(container) {
     buttons[current_index].classList.add('project-button-active');
     images[current_index].classList.add('project-image-active');
 
-    // For hver knapp I karusellen, set opp EventListener
+    // For hver knapp i karusellen, set opp EventListener
     buttons.forEach((button) => {
         button.addEventListener('click', (event) => {
             // Henter in knappen sin index i "buttons" arrayen

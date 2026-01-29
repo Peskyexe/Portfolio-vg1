@@ -95,7 +95,7 @@
 }
 /* Klasse for det aktive bilde */
 .project-image-active {
-    display: block;
+    display: block; 
 }
 
 .project-images-buttons-container {
