@@ -73,9 +73,12 @@
     grid-template-areas: 
     "box-2 box-1"
     "box-3 box-3";
+    transition: transform 0.09s ease;
 }
 .specialization-container:hover {
     background: linear-gradient(15deg, var(--bg) 15%, var(--bg-light));
+    border-color: var(--border);
+    transform: scale(1.05);
 }
 
 .specialization-container * {
@@ -86,7 +89,7 @@
 .specialization-container span {
     display: flex;
     align-items: center;
-    transition: 0.1s ease;
+    transition: 0.09s ease;
 }
 .specialization-container:hover span {
     color: var(--secondary);
