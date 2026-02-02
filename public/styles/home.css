@@ -1,0 +1,83 @@
+
+
+.hero-section {
+    background-color: var(--bg-dark);
+    width: 100%;
+    padding-top: 3em;
+}
+
+.hero-section .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0 2em;
+    grid-template-areas: 
+    "box-1 box-3 box-2";
+}
+
+.hero-text-container {
+    width: 100%;
+    margin-top: 10em;
+}
+
+.hero-text-container * {
+    width: 100%;
+}
+
+.hero-image-container {
+    margin-top: 2em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+}
+
+.bio-section {
+    background-color: var(--bg);
+    width: 100%;
+}
+
+.bio-section h3 {
+    margin-top: 1.5em;
+}
+
+.bio-section p {
+    margin-bottom: 4em;
+}
+
+
+/* Media queries for å gjøre nettsiden mere responsive */
+/* Gjør hero layouten til mere vertikal når skjermen er mindre en 800px bred */
+@media (max-width: 800px) {
+    .hero-section .content {
+        margin-top: 3em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "box-1 box-2"
+        "box-3 box-3";
+    }
+
+    .hero-text-container {
+        margin: 0;
+    }
+}
+
+/* Gjør hero layouten til full vertikal når skjermen er mindre en 400px bred */
+@media (max-width: 400px) {
+    .hero-section .content {
+        margin-top: 3em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas: 
+        "box-1"
+        "box-2"
+        "box-3";
+    }
+
+    .hero-text-container.grid-2 {
+        margin-bottom: 2em;
+    }
+}

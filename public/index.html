@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jørgen Sundbye | Full-stack developer and UI/UX designer</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- Stylesheets for global styling -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav_footer.css">
+    <!-- Stylesheet for hjemsiden -->
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- Script for responsive navbar -->
+    <script src="scripts/dynamic_navbar.js" defer></script>
+</head>
+<body>
+    <!-- Navbar seksjonen -->
+    <nav class="section">
+        <div class="content">
+            <a class="nav-logo-container" href="index.html"><img src="assets/portfolio_logo_posetive.svg" alt=""></a>
+            <!-- Sidebar, brukes når skjermen ikke er stor nok for en vanlig navbar -->
+            <div class="nav-links-sidebar">
+                <li class="menu-close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a class="nav-links" href="projects.html">Projects</a></li>
+                <li><a class="nav-links" href="about.html">About</a></li>
+                <li><a class="nav-links" href="contact.html">Contact</a></li>
+            </div>
+            <div class="nav-links-container">
+                <a class="nav-links" href="projects.html">Projects</a>
+                <a class="nav-links" href="about.html">About</a>
+                <a class="nav-links" href="contact.html">Contact</a>
+            </div>
+            <!-- Knapp til å åpne sidebaren -->
+            <i class="menu-open-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></i>
+        </div>
+    </nav>
+    <!-- Hero seksjonen -->
+    <div class="section hero-section">
+        <div class="content">
+            <div class="hero-text-container grid-1">
+                <h2>Coder</h2>
+                <p>Full-stack developr that writes clean and elegant code</p>
+            </div>
+            <div class="hero-image-container grid-3">
+                <img src="assets/portrait_images/portrait_vertical_lowres.png" class="hero-image"></img>
+            </div>
+            <div class="hero-text-container grid-2">
+                <h2>Designer</h2>
+                <p>UI and UX designer that makes modern and user friendly interfaces</p>
+            </div>
+        </div>
+    </div>
+    <!-- Bio seksjonen -->
+    <div class="section bio-section">
+        <div class="content">
+            <h3>Hey, my name is Jørgen</h3>
+            <p>I am a student at Åssiden Vgs studying information technology and media production, and I envision a future in IT development.</p>
+        </div>
+    </div>
+    <!-- Footer seksjonen -->
+    <footer class="section">
+        <div class="content">
+            <a class="footer-links-active" href="home.html">Home</a>
+            <div class="footer-links-container">
+                <a class="footer-links" href="projects.html">Projects</a>
+                <a class="footer-links" href="about.html">About</a>
+                <a class="footer-links" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

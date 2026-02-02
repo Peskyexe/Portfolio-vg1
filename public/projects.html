@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jørgen Sundbye | Project Gallery</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- Stylesheets for global styling -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav_footer.css">
+    <!-- Stylesheet for prosjekt siden -->
+    <link rel="stylesheet" href="styles/projects.css">
+    <!-- Script for responsive navbar -->
+    <script src="scripts/dynamic_navbar.js" defer></script>
+    <!-- Script for å kunne bytte mellom prosjekt bildene -->
+    <script src="scripts/projects/image_carousel.js" defer></script>
+    <!-- Script for å kunne zoome in på prosjekt bildene -->
+    <script src="scripts/projects/image_fullscreening.js" defer></script>
+</head>
+<body>
+    <!-- Navbar seksjonen -->
+    <nav class="section">
+        <div class="content">
+            <a class="nav-logo-container" href="index.html"><img src="assets/portfolio_logo_posetive.svg" alt=""></a>
+            <!-- Sidebar, brukes når skjermen ikke er stor nok for en vanlig navbar -->
+            <div class="nav-links-sidebar">
+                <li class="menu-close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a class="nav-links-active" href="projects.html">Projects</a></li>
+                <li><a class="nav-links" href="about.html">About</a></li>
+                <li><a class="nav-links" href="contact.html">Contact</a></li>
+            </div>
+            <div class="nav-links-container">
+                <a class="nav-links-active" href="projects.html">Projects</a>
+                <a class="nav-links" href="about.html">About</a>
+                <a class="nav-links" href="contact.html">Contact</a>
+            </div>
+            <!-- Knapp til å åpne sidebaren -->
+            <i class="menu-open-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" fill="#EBE6D8"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></i>
+        </div>
+    </nav>
+    <!-- Hoved prosjekter seksjonen / prosjekt galleri -->
+    <div class="section main-projects-section">
+        <div class="content">
+            <h1>Project Gallery</h1>
+            <!-- Padel app prosjekt visningen -->
+            <div class="project-container" id="project-1">
+                <span class="grid-4">Under active development</span>
+                <div class="project-images-container grid-1">
+                    <img src="assets/project_1/project_1_image_1.png" class="project-image">
+                    <img src="assets/project_1/project_1_image_2.png" class="project-image">
+                    <img src="assets/project_1/project_1_image_3.png" class="project-image">
+                </div>
+                <div class="project-text-container grid-2">
+                    <h4>Padel Americano App</h4>
+                    <div>
+                        <p>This web-app is trying to make it easier for everyone that plays Padle to create fair teams with their friends, and make it easy to host Americano tournements.</p>
+                        <p>I got the idea to create an app like this after my family and I were never satisfied with the other free Padel Americano apps that were out there.</p>
+                    </div>
+                    <!-- Link til å gå til en side som går mere i dyben på prosjektet, jeg har ikke planlagt og implementere dette -->
+                    <p>Click <a href="#">here</a> to go to the full project page</p>
+                </div>
+                <div class="project-images-buttons-container grid-3">
+                    <button class="project-button"></button>
+                    <button class="project-button"></button>
+                    <button class="project-button"></button>
+                </div>
+                <!-- Tomme bokser som jeg bruker til å fikse grid layouten -->
+                <div class="grid-5"></div>
+                <div class="grid-6"></div>
+            </div>
+            <!-- Vin app prosjekt visningen -->
+            <div class="project-container" id="project-2">
+                <span class="grid-4">Concept and early implementation</span>
+                <div class="project-images-container grid-1">
+                    <img src="assets/project_2/project_2_image_1.png" class="project-image">
+                </div>
+                <div class="project-text-container grid-2">
+                    <h4>Wine App</h4>
+                    <div>
+                        <p>This private web-app tries to help you with sorting and managing your own wine collection.</p>
+                        <p>The idea for this app comes from my father, and is also getting made for him.</p>
+                    </div>
+                    <!-- Link til å gå til en side som går mere i dyben på prosjektet, jeg har ikke planlagt og implementere dette -->
+                    <p>Click <a href="#">here</a> to go to the full project page</p>
+                </div>
+                <div class="project-images-buttons-container grid-3">
+                    <button class="project-button"></button>
+                </div>
+                <!-- Tomme bokser som jeg bruker til å fikse grid layouten -->
+                <div class="grid-5"></div>
+                <div class="grid-6"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer seksjonen -->
+    <footer class="section">
+        <div class="content">
+            <a class="footer-links" href="home.html">Home</a>
+            <div class="footer-links-container">
+                <a class="footer-links-active" href="projects.html">Projects</a>
+                <a class="footer-links" href="about.html">About</a>
+                <a class="footer-links" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Container for bilde zoom / popup greia -->
+    <div class="image-modal-hidden">
+        <img src="assets/project_1/project_1_image_1.png" class="image-modal-image-hidden">
+    </div>
+</body>
+</html>

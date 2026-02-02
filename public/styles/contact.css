@@ -1,0 +1,248 @@
+/* Farge variabler for de forskjelige sosial medier logoene */
+:root {
+    --linkedin: #007DBE;
+    --facebook: #3B5998;
+    --instagram: #EF0074;
+}
+
+
+/* Styling for "hero" seksjonen */
+.hero-section {
+    background-color: var(--bg-dark);
+}
+
+.hero-section .content {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 3em;
+    margin-top: 4em;
+}
+
+.hero-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+}
+
+.hero-text-container h2 {
+    text-align: left;
+}
+
+.hero-text-container p {
+    text-align: left;
+    font-weight: 300;
+}
+
+.hero-icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero-icons-container > div {
+    width: fit-content;
+    transition: opacity 0.1s ease;
+}
+/* Interaktive effekter for ikonen (egentlig ikonene sin container) */
+.hero-icons-container > div:hover {
+    opacity: 0.6;
+}
+
+.hero-icon {
+    font-size: 1.5em;
+    padding: 0.3em;
+    border-radius: 50%;
+}
+
+.hero-icon i {
+    color: white;
+}
+
+.hero-icon-text {
+    margin-left: 0.5em;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Farger for alle sosiale medier sin tekst og logo/ikon */
+#linkedin-container .hero-icon {
+    background-color: var(--linkedin);
+}
+#linkedin-container .hero-icon-text {
+    color: var(--linkedin);
+}
+
+#facebook-container .hero-icon {
+    background-color: var(--facebook);
+}
+#facebook-container .hero-icon-text {
+    color: var(--facebook);
+}
+
+#instagram-container .hero-icon {
+    background-color: var(--instagram);
+}
+#instagram-container .hero-icon-text {
+    color: var(--instagram);
+}
+
+.hero-right {
+    flex: 3;
+}
+
+.hero-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+
+/* Styling for E-post form seksjonen */
+.email-section {
+    background-color: var(--bg);
+}
+
+.email-section .content{
+    margin: 3em 0 4em 0;
+}
+
+.email-form {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas: 
+    "box-1 box-3"
+    "box-2 box-3"
+    "box-4 box-4";
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.email-form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form label {
+    line-height: 2em;
+}
+
+.email-form input {
+    height: 100%;
+    border: 3px solid var(--border);
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: var(--bg-light);
+    font-size: 1.125em;
+    transition: 0.1s ease;
+}
+/* Interaktive effekter for input feltene i epost formen */
+.email-form input:hover {
+    border-color: var(--border-muted);
+    background-color: white;
+}
+.email-form input:focus {
+    border-color: black;
+    background-color: white;
+}
+
+.email-form textarea {
+    height: 100%;
+    border: 3px solid var(--border);
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: var(--bg-light);
+    font-size: 1.125em;
+    transition: 0.1s ease;
+    resize: none;
+    overflow: hidden;
+}
+/* Interaktive effekter for tekst område/melding inputen i epost formen */
+.email-form textarea:hover {
+    border-color: var(--border-muted);
+    background-color: white;
+}
+.email-form textarea:focus {
+    border-color: black;
+    background-color: white;
+}
+
+.message-input-container {
+    margin-left: 1.5em;
+}
+
+.email-form > .message-button-container {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.message-button-container button {
+    padding: 0.5em 1em;
+    border: none;
+    color: var(--bg-light);
+    background-color: var(--border);    
+    border-radius: 0.5em;
+    font-size: 1.125em;
+    transition: 0.1s ease;
+}
+/* Interakitve effekter for knappen I epost formen */
+.message-button-container button:hover {
+    opacity: 0.75;
+}
+.message-button-container button:active {
+    opacity: 0.75;
+}
+
+/* Media queries for å gjøre nettsiden mere responsive */
+/* Fjerner bilde ved toppen når skjermen er mindre en 800px bred */
+@media (max-width: 1000px) {
+    .hero-section .content {
+        grid-template-columns: 1fr;
+        margin: 4em 0;
+    }
+
+    .hero-right {
+        display: none;
+    }
+}
+
+/* Gjør om E-post formen till full vertikal layout når skjermen er mindre en 550px bred */
+@media (max-width: 550px) {
+    .email-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr auto;
+        grid-template-areas: 
+        "box-1"
+        "box-2"
+        "box-3"
+        "box-4";
+        margin-top: 0.5em;
+    }
+
+    .message-input-container {
+        margin-left: 0;
+    }
+}
+
+/* Sentrerer noen av elementene når skjermen er mindre en 400px bred */
+@media (max-width: 400px) {
+    .hero-text-container h2, p {
+        text-align: center;
+    }
+
+    .hero-text-container p {
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+}

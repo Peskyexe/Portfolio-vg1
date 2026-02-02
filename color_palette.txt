@@ -1,0 +1,88 @@
+Sajid Color settings:
+Neutral/Vivid: 0.04
+Warmer/Cooler: 145
+
+CSS color variables:
+
+:root {
+  /* hsl (fallback color) */
+  --bg-dark: hsl(122 59% 1%);
+  --bg: hsl(121 37% 4%);
+  --bg-light: hsl(121 20% 8%);
+  --text: hsl(119 68% 93%);
+  --text-muted: hsl(120 14% 68%);
+  --highlight: hsl(120 11% 37%);
+  --border: hsl(121 14% 27%);
+  --border-muted: hsl(121 22% 16%);
+  --primary: hsl(121 32% 65%);
+  --secondary: hsl(297 40% 72%);
+  --danger: hsl(9 26% 64%);
+  --warning: hsl(52 19% 57%);
+  --success: hsl(146 17% 59%);
+  --info: hsl(217 28% 65%);
+  /* oklch */
+  --bg-dark: oklch(0.1 0.02 145);
+  --bg: oklch(0.15 0.02 145);
+  --bg-light: oklch(0.2 0.02 145);
+  --text: oklch(0.96 0.04 145);
+  --text-muted: oklch(0.76 0.04 145);
+  --highlight: oklch(0.5 0.04 145);
+  --border: oklch(0.4 0.04 145);
+  --border-muted: oklch(0.3 0.04 145);
+  --primary: oklch(0.76 0.1 145);
+  --secondary: oklch(0.76 0.1 325);
+  --danger: oklch(0.7 0.05 30);
+  --warning: oklch(0.7 0.05 100);
+  --success: oklch(0.7 0.05 160);
+  --info: oklch(0.7 0.05 260);
+}
+body.light {
+  /* hsl (fallback color) */
+  --bg-dark: hsl(119 21% 89%);
+  --bg: hsl(119 39% 94%);
+  --bg-light: hsl(119 100% 99%);
+  --text: hsl(123 81% 3%);
+  --text-muted: hsl(121 14% 27%);
+  --highlight: hsl(119 100% 98%);
+  --border: hsl(120 9% 49%);
+  --border-muted: hsl(120 11% 61%);
+  --primary: hsl(126 49% 22%);
+  --secondary: hsl(296 34% 30%);
+  --danger: hsl(9 21% 41%);
+  --warning: hsl(52 23% 34%);
+  --success: hsl(147 19% 36%);
+  --info: hsl(217 22% 41%);
+  /* oklch */
+  --bg-dark: oklch(0.92 0.02 145);
+  --bg: oklch(0.96 0.02 145);
+  --bg-light: oklch(1 0.02 145);
+  --text: oklch(0.15 0.04 145);
+  --text-muted: oklch(0.4 0.04 145);
+  --highlight: oklch(1 0.04 145);
+  --border: oklch(0.6 0.04 145);
+  --border-muted: oklch(0.7 0.04 145);
+  --primary: oklch(0.4 0.1 145);
+  --secondary: oklch(0.4 0.1 325);
+  --danger: oklch(0.5 0.05 30);
+  --warning: oklch(0.5 0.05 100);
+  --success: oklch(0.5 0.05 160);
+  --info: oklch(0.5 0.05 260);
+}
+
+
+
+
+Background Dark 	#e1e7d9
+Background 		#eef5e6
+Background Light 	#ffffff
+
+Text 			#091101
+Text Muted 		#414c35
+
+Border			#3a4e3a
+Border Muted		#213321
+
+Primary 		#385107
+Secondary 		#573771
+
+
